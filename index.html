@@ -1,22 +1,17 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>My Website</title>
+    <title>My Business</title>
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-
         body {
-            background: #f4f7fb;
-            color: #222;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            color: #333;
         }
 
         header {
@@ -26,100 +21,122 @@
             text-align: center;
         }
 
-        header h1 {
-            font-size: 32px;
-            margin-bottom: 8px;
+        nav {
+            background: #1f2937;
+            padding: 15px;
+            text-align: center;
         }
 
-        header p {
-            color: #d1d5db;
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
         }
 
         .hero {
-            text-align: center;
-            padding: 80px 20px;
             background: white;
+            padding: 70px 20px;
+            text-align: center;
         }
 
-        .hero h2 {
+        .hero h1 {
             font-size: 40px;
             margin-bottom: 15px;
-            color: #111827;
         }
 
         .hero p {
-            font-size: 18px;
-            color: #555;
-            margin-bottom: 30px;
+            font-size: 20px;
         }
 
         .button {
             display: inline-block;
-            padding: 14px 28px;
             background: #2563eb;
             color: white;
+            padding: 15px 30px;
+            margin-top: 20px;
             text-decoration: none;
-            border-radius: 8px;
-            font-size: 17px;
+            border-radius: 5px;
         }
 
-        .button:hover {
-            background: #1d4ed8;
-        }
-
-        .about {
-            padding: 60px 20px;
+        .services {
+            padding: 50px 20px;
             text-align: center;
         }
 
-        .about h2 {
-            font-size: 30px;
-            margin-bottom: 15px;
+        .service-box {
+            background: white;
+            padding: 25px;
+            margin: 15px auto;
+            max-width: 500px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px #ccc;
         }
 
-        .about p {
-            max-width: 600px;
-            margin: auto;
-            line-height: 1.7;
-            color: #555;
+        .contact {
+            background: #111827;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
         }
 
         footer {
-            margin-top: 30px;
-            background: #111827;
+            background: #000;
             color: white;
             text-align: center;
-            padding: 20px;
+            padding: 15px;
         }
     </style>
 </head>
 
 <body>
 
-    <header>
-        <h1>My Website</h1>
-        <p>Welcome to my official website</p>
-    </header>
+<header>
+    <h1>My Business</h1>
+    <p>Your Trusted Business Partner</p>
+</header>
 
-    <section class="hero">
-        <h2>Welcome to My Website</h2>
-        <p>My website is now live on GitHub Pages!</p>
+<nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-        <a href="#about" class="button">Learn More</a>
-    </section>
+<section class="hero" id="home">
+    <h1>Welcome to My Business</h1>
+    <p>We provide quality products and professional services.</p>
+    <a class="button" href="#contact">Contact Us</a>
+</section>
 
-    <section class="about" id="about">
-        <h2>About Me</h2>
-        <p>
-            Hello! Welcome to my website.
-            This website is created using HTML and CSS
-            and hosted with GitHub Pages.
-        </p>
-    </section>
+<section class="services" id="services">
+    <h2>Our Services</h2>
 
-    <footer>
-        <p>© 2026 My Website. All Rights Reserved.</p>
-    </footer>
+    <div class="service-box">
+        <h3>Quality Products</h3>
+        <p>We provide high-quality products at reasonable prices.</p>
+    </div>
+
+    <div class="service-box">
+        <h3>Professional Service</h3>
+        <p>Our team provides reliable and professional services.</p>
+    </div>
+
+    <div class="service-box">
+        <h3>Customer Support</h3>
+        <p>We are always ready to help our customers.</p>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Phone: 0300-1234567</p>
+    <p>Email: mybusiness@gmail.com</p>
+    <p>Address: Pakistan</p>
+</section>
+
+<footer>
+    <p>© 2026 My Business. All Rights Reserved.</p>
+</footer>
 
 </body>
 </html>
