@@ -21,74 +21,92 @@ header {
     padding: 30px 20px;
 }
 
-.logo {
-    width: 120px;
-    height: 120px;
-    object-fit: contain;
-    border-radius: 50%;
-    margin-bottom: 15px;
-}
-
 header h1 {
     margin: 10px 0;
 }
 
 nav {
-    background: #222;
-    text-align: center;
-    padding: 15px;
+    margin-top: 20px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 20px;
+    margin: 0 15px;
+    font-size: 18px;
 }
 
 .hero {
     text-align: center;
-    padding: 80px 20px;
+    padding: 70px 20px;
     background: white;
 }
 
 .hero h2 {
-    font-size: 40px;
+    font-size: 36px;
 }
 
-button {
-    background: #2563eb;
+.hero p {
+    font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    background: #25D366;
     color: white;
-    border: none;
-    padding: 15px 30px;
+    padding: 12px 25px;
+    margin-top: 15px;
+    text-decoration: none;
     border-radius: 5px;
-    font-size: 16px;
+    font-weight: bold;
 }
 
 .services {
-    text-align: center;
     padding: 50px 20px;
+    text-align: center;
 }
 
-.service-box {
+.services h2 {
+    font-size: 32px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
     background: white;
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 30px;
+    width: 280px;
+    padding: 25px;
     border-radius: 10px;
-    box-shadow: 0 2px 10px #ccc;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+    color: #111827;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #25D366;
 }
 
 .contact {
     text-align: center;
     padding: 50px 20px;
-    background: #e5e7eb;
+    background: #111827;
+    color: white;
 }
 
 footer {
-    background: #111827;
-    color: white;
     text-align: center;
     padding: 20px;
+    background: #000;
+    color: white;
 }
 </style>
 </head>
@@ -96,84 +114,83 @@ footer {
 <body>
 
 <header>
-
-    <img src="logo.png" alt="SB Logo" class="logo">
-
     <h1>SB Digital Marketing</h1>
-
     <p>Grow Your Business Online</p>
 
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
 </header>
 
-<nav>
-
-    <a href="#home">Home</a>
-
-    <a href="#services">Services</a>
-
-    <a href="#contact">Contact</a>
-
-</nav>
-
 <section class="hero" id="home">
-
     <h2>Welcome to SB Digital Marketing</h2>
-
     <p>We help businesses grow and reach more customers online.</p>
 
-    <button>Contact Us</button>
-
+    <a class="btn" href="#services">View Our Services</a>
 </section>
 
 <section class="services" id="services">
 
     <h2>Our Services</h2>
 
-    <div class="service-box">
+    <div class="service-container">
 
-        <h3>Digital Marketing</h3>
+        <div class="card">
+            <h3>Social Media Marketing</h3>
+            <p>Grow your business on Facebook and Instagram.</p>
+            <div class="price">Rs. 5,000</div>
 
-        <p>Professional digital marketing services to grow your business online.</p>
+            <a class="btn" href="https://wa.me/923XXXXXXXXX?text=I%20want%20Social%20Media%20Marketing">
+                Order Now
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>Facebook & Instagram Ads</h3>
+            <p>Reach more customers with targeted advertising.</p>
+            <div class="price">Rs. 7,000</div>
+
+            <a class="btn" href="https://wa.me/923XXXXXXXXX?text=I%20want%20Facebook%20and%20Instagram%20Ads">
+                Order Now
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>SEO Service</h3>
+            <p>Improve your website visibility on Google.</p>
+            <div class="price">Rs. 8,000</div>
+
+            <a class="btn" href="https://wa.me/923XXXXXXXXX?text=I%20want%20SEO%20Service">
+                Order Now
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>Website Design</h3>
+            <p>Get a professional website for your business.</p>
+            <div class="price">Rs. 15,000</div>
+
+            <a class="btn" href="https://wa.me/923XXXXXXXXX?text=I%20want%20Website%20Design">
+                Order Now
+            </a>
+        </div>
 
     </div>
-
-    <div class="service-box">
-
-        <h3>Social Media Marketing</h3>
-
-        <p>We help you promote your business on social media platforms.</p>
-
-    </div>
-
-    <div class="service-box">
-
-        <h3>Online Business Promotion</h3>
-
-        <p>Grow your brand and reach more customers through online marketing.</p>
-
-    </div>
-
 </section>
 
 <section class="contact" id="contact">
-
     <h2>Contact Us</h2>
+    <p>Ready to grow your business?</p>
 
-    <p>For Digital Marketing Services</p>
-
-    <p>
-        <strong>Email:</strong>
-        <a href="mailto:b4bhattisab@gmail.com">
-            b4bhattisab@gmail.com
-        </a>
-    </p>
-
+    <a class="btn" href="https://wa.me/923706987074?text=Hello%20SB%20Digital%20Marketing">
+        Contact on WhatsApp
+    </a>
 </section>
 
 <footer>
-
     <p>© 2026 SB Digital Marketing. All Rights Reserved.</p>
-
 </footer>
 
 </body>
